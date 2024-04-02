@@ -1,22 +1,8 @@
-.abas-textos{
-    background-color: var(--texto-fundo);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
-}
-.aba-conteudo.ativo{
-    display:block;
-}
-
-.aba-conteudo{
-    display: none;
-}
-
-.aba-conteudo-titulo-principal{
-    font-size: 28px;
-    text-align: center;
-}
-.aba-conteudo-titulo-secundario{
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
+ const botoes = document.querySelectorAll(".botao");
+for(let i=0; i<botoes.length; i++){
+    botoes [i].onclick = function(){
+        for(let j=0; j<botoes.length; j++){
+            botoes [j].classList.remove("ativo");
+        }
+    }
 }
